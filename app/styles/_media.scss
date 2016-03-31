@@ -1,0 +1,150 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.relax-left {
+		width: 26%;
+	}
+	.relax-right {
+		width: 74%;
+	}
+
+	.latest-project {
+		background-size: 80%;
+		background-position: 100% 60%;
+	}
+}
+
+	/* Medium Devices, Desktops */
+	@media only screen and (max-width : 992px) {
+		
+		body {
+			font-size: 14px;
+		}
+
+		.line-decor {
+			display: none;
+		}
+		
+		header {
+			height: 50px;
+
+		}
+
+		.logo {
+			line-height: 50px;
+		}
+
+		.mob-btn {
+			display: block;
+		}
+
+		#mob-menu {
+			display: none;
+			position: absolute;
+			z-index: 10;
+			top: 50px;
+			right: 0;
+			width: 100%;
+			border-bottom: 3px solid darken($font-dark, 5%);
+			li {
+				text-align: center;
+				background-color: $font-dark;
+				border-bottom: 1px solid lighten($font-green, 15%);
+				&:last-child {
+					border-bottom: none;
+				}
+				a {
+					color: #fff;
+					display: block;
+					line-height: 85px;
+					vertical-align: middle;
+					text-transform: uppercase;
+					&:active {
+						background-color: $font-green;;
+					}
+				}
+			}
+		}
+
+		.copyright {
+			text-align: center;
+		}
+
+		.circle {
+			width: 140px;
+			height: 140px;
+			border-radius: 70px;
+			margin-top: 20px;
+		}
+
+		.logo-wrapper {
+			margin: 20px 0;
+		}
+
+		.latest-tweets {
+			margin-top: 55px;
+		}
+
+		.clients-row-1 {
+			margin-top: 40px;
+		}
+
+		.square-triangle-left::before {
+			position: absolute;
+			content: '';
+			top: -24px;
+			left: calc(50% - 12px);
+			@include triangle(24px, #F9F9F9, up);
+		}
+		.square-triangle-right::after {
+			position: absolute;
+			content: '';
+			top: 170px;
+			left: calc(50% - 12px);
+			@include triangle(24px, #F9F9F9, down);
+		}
+
+	}
+
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : 768px) {
+		.relax-left {
+			display: none;
+		}
+		.relax-right {
+			width: 100%;
+		}
+		.latest-project {
+			background-image: none;
+		}
+
+		.clients-row-1 {
+			margin-top: 40px;
+		}
+
+		.latest-posts {
+			margin-top: 55px;
+
+		}
+
+	}
+
+	/* Extra Small Devices, Phones */ 
+	@media only screen and (max-width : 480px) {
+		.top-title h1 {
+			margin-top: 80px;
+			font-size: em(50);
+		}
+
+		.relax-right-inner {
+			margin: 60px 10px 0;
+		}
+
+		.square-triangle-left, .square-triangle-right {
+			height: auto;
+		}
+	}
+
+	/* Custom, iPhone Retina */ 
+	@media only screen and (max-width : 320px) {
+
+	}
